@@ -1,19 +1,19 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Hi, this is Heather Qiu :)
 
 # Your name to show in the footer
-author: Some Person
+author: Zhi (Heather) Qiu
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Other Sites:
+    - LinkedIn: "https://www.linkedin.com/in/zhiqiu/"
+    - GitHub: "https://github.com/ZhiQiu976"
+  #Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
