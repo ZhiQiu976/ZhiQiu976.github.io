@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Data Science, Statistics, Financial Mathematics
+subtitle: Data Science, Statistics, Financial Mathematics, AI, ML, DL, Python, R, Github
 ---
 
 ### My story
