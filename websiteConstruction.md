@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to construct a Personal Website? 
-subtitle: - GitHub pages and Jekyll could make your life easier
+subtitle: GitHub pages and Jekyll could make your life easier
 gh-repo: ZhiQiu976/ZhiQiu976.github.io
 gh-badge: [star, fork, follow]
 tags: [website, jekyll]
