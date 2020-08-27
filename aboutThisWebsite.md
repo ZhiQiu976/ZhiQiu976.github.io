@@ -13,14 +13,10 @@ This website serves as a personal project portfolio mainly consists of blogs for
 Below are the categorization of blogs on this website:
 
 - Projects:
-    - ML projects:
-    - 
-	-
+    - ML:
+    - DL:
 	
-- DL projects:
-	-
-	-
-	
-- 
+- Technical Posts:
+    - Website: Website Construction
 
 
