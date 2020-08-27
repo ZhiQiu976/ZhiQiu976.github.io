@@ -13,9 +13,12 @@ This is a tutorial to show you how to construct a personal website using GitHub 
 **Here are the steps:**
 
 1. Google "Jekyll themes": Just go ahead and pick your favourite themes from the official Jekyll gallery websites or some posts advocating their own themes.
+
 2. Fork the GitHub Repo: Usually the themes you picked from internet would have a link directing to its own GitHub repo, go fork it.
-3. Change your branch name: Here comes the most important setp! Remember to **change the name of the forked branch** in your GitHub repository to <yourusername>.github.io. For example, mine is "ZhiQiu976.github.io".
-4. Modify it: Now you have already got your own web page https://<yourusername>.github.io (Thanks to GitHub, every user could have a free website!). The only thing left is to modify and customize. What we currently have is a pure copy of another person's website, so you would need to follow the instructions in that GitHub repo, read and understand the codes, then go construct your unique website :P
+
+3. Change your branch name: Here comes the most important setp! Remember to **change the name of the forked branch** in your GitHub repository to `<yourusername>.github.io`. For example, mine is `ZhiQiu976.github.io`.
+
+4. **Modify it**: Now you have already got your own web page `https://<yourusername>.github.io` (Thanks to GitHub, every user could have a free website!). The only thing left is to modify and customize. What we currently have is a pure copy of another person's website, so you would need to follow the instructions in that GitHub repo, read and understand the codes, then go construct your unique website :P
 
 Actually step 4 could be very time-consuming if you want to make your website fancy and well-organized, but it's always good to take use of the open-source codes and develop upon these. I guess that's why we all love communities like Github and that's how we develop our technical skills. Last but not least, do remember to respect the copyright. As you could see at the footer of my website, my website is modified from [Beautiful Jekyll](https://beautifuljekyll.com).
 
