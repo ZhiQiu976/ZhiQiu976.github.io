@@ -11,10 +11,10 @@ author: Zhi (Heather) Qiu
 navbar-links:
   About Me: "aboutme"
   This Website: "aboutThisWebsite"
-  Posts:
-    - Tech Posts:
-      - Website Construction: "websiteConstruction"
-  Other Sites:
+  Projects:
+  Tech Posts:
+    - Website Construction: "websiteConstruction"
+  Others:
     - LinkedIn: "https://www.linkedin.com/in/zhiqiu/"
     - GitHub: "https://github.com/ZhiQiu976"
   #Author's home: "https://deanattali.com"
