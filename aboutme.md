@@ -1,12 +1,13 @@
 ---
 layout: page
-title: About me - Zhi (Heather) Qiu
+title: About me
 subtitle: Data Science, Statistics, Financial Mathematics
 ---
 
-Hi, my name is Zhi Qiu and you can call me Heather :)
 
 ### My story
+
+Hi, my name is Zhi Qiu and you can call me Heather :)
 
 - I'm a second-year graduate student of Statistics at Duke University who will graduate in May 2021.
 - I finished my undergraduate degree of Financial Mathematics at University of Liverpool.
@@ -19,6 +20,10 @@ I'm currently seeking a full-time Data Scientist / Engineer position preferably 
 
 ### My life
 
-I currently live in Durham, NC and really enjoy the weather and forests here. I like travelling, walking, sitcoms and kpop. I enjoy seeing old friends and meeting new people. Always open to talk and different ideas!
+- I currently live in Durham, NC and really enjoy the weather and forests here.
+- I like travelling, walking, sitcoms and kpop.
+- I enjoy seeing old friends and meeting new people.
+
+Always open to talk and different ideas!
 
 
