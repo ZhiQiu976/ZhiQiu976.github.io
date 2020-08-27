@@ -10,13 +10,13 @@ This website serves as a personal project portfolio mainly consists of blogs for
 
 ### Contents
 
-Below are the categorization of blogs on this website:
+Below is the categorization of blogs on this website:
 
 - Projects:
     - ML:
     - DL:
 	
 - Technical Posts:
-    - Website: Website Construction
+    - Website: [Website Construction] (https://zhiqiu976.github.io/websiteConstruction/)
 
 
