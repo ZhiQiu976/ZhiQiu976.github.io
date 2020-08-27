@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Data Science, Statistics, Financial Mathematics, Artificial Intelligence, Machine Learning, Deep Learning
+subtitle: Data Science, Statistics, Financial Mathematics, AI, ML, Deep Learning
 ---
 
 ### My story
