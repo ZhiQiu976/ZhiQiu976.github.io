@@ -17,6 +17,6 @@ Below is the categorization of blogs on this website:
     - DL:
 	
 - Technical Posts:
-    - Website: [Website Construction] (https://zhiqiu976.github.io/websiteConstruction/)
+    - Website: [Website Construction](https://zhiqiu976.github.io/websiteConstruction/)
 
 
