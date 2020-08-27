@@ -10,6 +10,9 @@ author: Zhi (Heather) Qiu
 
 navbar-links:
   About Me: "aboutme"
+  About This Website: "aboutThisWebsite"
+  Tech Posts:
+    - Website Construction: "websiteConstruction"
   Other Sites:
     - LinkedIn: "https://www.linkedin.com/in/zhiqiu/"
     - GitHub: "https://github.com/ZhiQiu976"
