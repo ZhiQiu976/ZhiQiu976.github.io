@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: Data Science, Statistics, Financial Mathematics
 ---
-<br>
+
 ### My story
   
 Hi, my name is Zhi Qiu and you can call me Heather :)
