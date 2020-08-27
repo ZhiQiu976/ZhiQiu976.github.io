@@ -1,7 +1,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Zhi (Heather) Qiu
+title: Hi, this is Zhi (Heather) Qiu
 
 # Your name to show in the footer
 author: Zhi (Heather) Qiu
@@ -99,7 +99,7 @@ footer-link-col: "#404040"
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
-page-img: "/assets/img/botanical-cactus-close-up-decor-305821.jpg"
+#page-img: "/assets/img/botanical-cactus-close-up-decor-305821.jpg"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
