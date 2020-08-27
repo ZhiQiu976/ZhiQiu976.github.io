@@ -1,16 +1,24 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About me - Zhi (Heather) Qiu
+subtitle: Data Science, Statistics, Financial Mathematics
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
+Hi, my name is Zhi Qiu and you can call me Heather :)
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- I'm a second-year graduate student of Statistics at Duke University who will graduate in May 2021.
+- I finished my undergraduate degree of Financial Mathematics at University of Liverpool.
+
+I studied and lived in China, UK and USA in the past few years. After these years' studying and internship experience in different countries about Data Analysis, Data Science and Quantitative Analytics in the FinTech industry, I found it most intriguing seeking a career path as a **Data Scientist** / **ML Engineer** in the US.
+
+I'm passionate about building Machine Learning models for financial companies or technical companies and I've spent the last summer helping growing Wells Fargo's Small Business Classification model by about 20% in accuracy through dedicated efforts in text processing, machine leaning model fitting and original hierarchical structure construction.
+
+I'm currently seeking a full-time Data Scientist / Engineer position preferably in the financial industry or the tech industry in the US, but I'm open to all opportunities anywhere. If you'd like to work together or know more about me, feel free to direct message me or drop an e-mail to **qziuhi@126.com** or **zhi.qiu731@duke.edu**. 
+
+### My life
+
+I currently live in Durham, NC and really enjoy the weather and forests here. I like travelling, walking, sitcoms and kpop. I enjoy seeing old friends and meeting new people. Always open to talk and different ideas!
+
+
