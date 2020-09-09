@@ -10,9 +10,11 @@ tags: [algorithm, string, dynamic programming, itertools]
 comments: true
 ---
 
-This is a tutorial to show you how to construct a personal website using GitHub pages and Jekyll within 4 steps. It may be unconventional, but it is far more convenient than self-writing the whole web page.
+This post will talk about some interesting programming problems in the famous [Project Euler](https://projecteuler.net), which is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. As stated on the website, 'although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems'. In the next few minutes, I'll walk you through some useful algorithms and codes that could solve three typical mathe puzzles in Project Euler elegantly.
 
-**Here are the steps:**
+**You can check the `Euler Project` folder in my Github Repo [`ZhiQiu976/source-codes-tech-posts`](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed solutions.**
+
+## [Euler Problem 8](https://projecteuler.net/problem=8)
 
 1. Google "Jekyll themes": Just go ahead and pick your favourite themes from the official Jekyll gallery websites or some posts advocating their own themes.
 
