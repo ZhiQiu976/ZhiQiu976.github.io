@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: Data Science, Statistics, Financial Mathematics, AI, ML, Deep Learning
-cover-img: /assets/img/image-duke.jpeg.jpg
+cover-img: /assets/img/image-duke.jpeg
 ---
 
 ### My story
