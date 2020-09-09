@@ -31,7 +31,7 @@ Actually `step 4` could be very time-consuming if you want to make your website 
 
 - Since my main goal of website construction is for short blog writing and projects summarising, and I want to keep this website as concise as possible, the modification way suits quite well for me at the current stage.
 
-- Just choose the most appropriate method according to your own need :sunglasses:
+- Just choose the most appropriate method according to your own need 😎
 
 ![Crepe](https://opensource.org/files/osi_keyhole_300X300_90ppi_0.png){: .mx-auto.d-block :}
 
