@@ -7,7 +7,7 @@ cover-img: /assets/img/banner-forest.jpg
 
 ### My story
   
-Hi, my name is Zhi Qiu and you can call me Heather :relaxed:
+Hi, my name is Zhi Qiu and you can call me Heather :blush:
   
 - I'm a second-year graduate student of **Statistics** at Duke University who will graduate in `May 2021`.
 - I finished my undergraduate degree of **Financial Mathematics** at University of Liverpool.
