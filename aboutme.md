@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: Data Science, Statistics, Financial Mathematics, AI, ML, Deep Learning
-cover-img: /assets/img/banner-warmful.jpg
+cover-img: /assets/img/image-duke.jpeg.jpg
 ---
 
 ### My story
@@ -18,7 +18,7 @@ I'm passionate about building Machine Learning models for `financial companies o
 
 I'm currently seeking a `full-time` **Data Scientist / Engineer** `position` preferably in the financial industry or the tech industry in the US, but I'm open to all opportunities anywhere. If you'd like to work together or know more about me, feel free to direct message me on [LinkedIn](https://www.linkedin.com/in/zhiqiu/) or [GitHub](https://github.com/ZhiQiu976). You can also approach me via `e-mail - zhi.qiu731@duke.edu`.
 
-![Crepe](/assets/img/image-duke.jpeg){: .mx-auto.d-block :}
+<br />
 
 ### My life
   
