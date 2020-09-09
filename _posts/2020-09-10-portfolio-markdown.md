@@ -6,7 +6,7 @@ cover-img: /assets/img/banner-tea.jpg
 thumbnail-img: /assets/img/hands.jpg
 ---
 
-Here is a summary about my Data Science portfolio. Check this post for my work and project experiences!
+Here is a summary about my **Data Science portfolio**. Check this post for my `work and project experiences`!
 
 
 ## Internship
@@ -77,7 +77,7 @@ Here is a summary about my Data Science portfolio. Check this post for my work a
 - Worked individually to implement complicated API requesting for breaking news headlines and historical articles accessing from over 30,000 news sources.
 - Created a well organised and aesthetically pleasing R Shiny news deck (dashboard) which serves as a central news hub for readers and customers.
 
-![Crepe](/assets/img/banner-wall.jpg){: .mx-auto.d-block :}
+![Crepe](/assets/img/banner-star.jpg){: .mx-auto.d-block :}
 
 
 
