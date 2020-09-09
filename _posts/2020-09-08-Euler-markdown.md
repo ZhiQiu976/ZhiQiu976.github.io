@@ -23,31 +23,50 @@ This post will talk about some interesting programming problems in the famous [P
 - Codes Glimpse:
 
 ```javascript
-# get the adjacent digits
 ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
-# turn into floating number
 ss = [list(map(int, s)) for s in ss]
-# calculate productes
+
 products = [np.prod(s) for s in ss]
-# find the maximum
 idx = np.argmax(products)
 
 result = products[idx]
 digits = ss[idx]
-
-return digits, result
 ```
 
 
 
 ## [Euler Problem 31](https://projecteuler.net/problem=31)
 
+- Problem: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
 
+- Solution:
+
+- Codes Glimpse:
+
+```javascript
+ways = [1] + [0] * total
+for i in inputs:
+    for j in range(1, total+1):
+        if i <= j:
+            ways[j] += ways[j-i]
+            
+total_ways = ways[total]
+```
 
 
 
 
 ## [Euler Problem 77](https://projecteuler.net/problem=77)
+
+- Problem: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
+
+- Solution:
+
+- Codes Glimpse:
+
+```javascript
+sum_value = next(filter(lambda n: prime_ways(n) > threshold, itertools.count(2)))
+```
 
 
 
