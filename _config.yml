@@ -10,7 +10,7 @@ author: Zhi (Heather) Qiu
 
 navbar-links:
   About Me: "aboutme"
-  Projects:
+  Projects: "projects"
   Tech Posts:
     - Website Construction: "https://zhiqiu976.github.io/2020-08-27-website-markdown/"
   Others:
