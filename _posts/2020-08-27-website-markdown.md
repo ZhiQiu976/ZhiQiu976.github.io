@@ -5,7 +5,7 @@ subtitle: GitHub pages and Jekyll could make your life easier
 gh-repo: ZhiQiu976/ZhiQiu976.github.io
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/banner-green.jpg
-thumbnail-img: /assets/img/creating-perfect-event-websites.png
+thumbnail-img: /assets/img/photo-finger.jpeg
 tags: [website, jekyll]
 comments: true
 ---
