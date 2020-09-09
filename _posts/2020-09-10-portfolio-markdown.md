@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Internship & Course Projects
+subtitle: Internship | Projects
 cover-img: /assets/img/banner-black.jpg
 thumbnail-img: /assets/img/hello_world.jpeg
 ---
