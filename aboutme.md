@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: Data Science, Statistics, Financial Mathematics, AI, ML, Deep Learning
-cover-img: /assets/img/banner-tea.jpg
+cover-img: /assets/img/banner-forest.jpg
 ---
 
 ### My story
