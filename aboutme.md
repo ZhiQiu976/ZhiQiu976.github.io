@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: Data Science, Statistics, Financial Mathematics, AI, ML, Deep Learning
-cover-img: /assets/img/assets/img/banner-tea.jpg
+cover-img: /assets/img/banner-tea.jpg
 ---
 
 ### My story
@@ -24,6 +24,6 @@ I'm currently seeking a `full-time` **Data Scientist / Engineer** `position` pre
   
 I currently live in Durham, NC and really enjoy the weather and forests here. I like travelling, walking, sitcoms and kpop. I enjoy seeing old friends and meeting new people. Always open to talk and different ideas!
 
-![Crepe](image-duke.jpeg){: .mx-auto.d-block :}
+![Crepe](/assets/img/image-duke.jpeg){: .mx-auto.d-block :}
 
 
