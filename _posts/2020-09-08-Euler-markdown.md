@@ -4,7 +4,7 @@ title: Project Euler - Example Q&A
 gh-repo: ZhiQiu976/source-codes-tech-posts
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/banner-wood.jpg
-thumbnail-img: /assets/img/photo-Euler.jpeg
+thumbnail-img: /assets/img/photo-Euler.jpg
 tags: [algorithm, string, dynamic programming, itertools]
 comments: true
 ---
