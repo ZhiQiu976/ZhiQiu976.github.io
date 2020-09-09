@@ -1,14 +1,15 @@
 ---
 layout: page
-title: Projects
+title: Portfolio
 subtitle: Internship | Projects
-cover-img: /assets/img/banner-black.jpg
-thumbnail-img: /assets/img/hello_world.jpeg
+cover-img: /assets/img/banner-tea.jpg
+thumbnail-img: /assets/img/hands.jpg
 ---
 
 ## Internship
-  
-### Data Science Intern - Wells Fargo, USA
+
+
+### `Data Science Intern - Wells Fargo, USA`
 
 **Jun 2020 - Aug 2020**
   
@@ -17,7 +18,7 @@ thumbnail-img: /assets/img/hello_world.jpeg
 - Built the champion model of 65% CV accuracy (improved the existing model by 20%) with BoW and SVM, and constructed an original hierarchical ensemble for speed lifting (30k data in 1 minute).
 - Presented work to about 80 people in half an hour and posted a 5-page blog on company's internal website.
 
-### Data Mining Intern - Bank of Ningbo, China
+### `Data Mining Intern - Bank of Ningbo, China`
 
 **Jun 2019 - Aug 2019**
 
@@ -25,7 +26,7 @@ thumbnail-img: /assets/img/hello_world.jpeg
 - Assisted in initiating data analytics and process automation through Python to increase team’s performance and efficiency.
 - Collaborated cross-functionally with other teams/departments to provide products and services while performing due diligence to customers.
 
-### Credit Risk Analytics Intern - China Construction Bank, China
+### `Credit Risk Analytics Intern - China Construction Bank, China`
 
 **Jun 2018 - Aug 2018**
 
@@ -34,7 +35,11 @@ thumbnail-img: /assets/img/hello_world.jpeg
 - Assisted in loan management and helped evaluating credit level of borrowers by using bank's internal credit system (mainly about financial liquidity).
 
 
+
+
+
 ## Course Projects
+
 
 ### [Bayesian Algorithm Implementation](https://github.com/ZhiQiu976/project-IBP-LGaussian-Algorithm-Implementation)
 
