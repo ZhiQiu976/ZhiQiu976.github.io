@@ -22,7 +22,7 @@ This post will talk about some interesting programming problems in the famous [P
 
 - Codes Glimpse:
 
-```javascript
+```
 ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
 ss = [list(map(int, s)) for s in ss]
 
@@ -43,7 +43,7 @@ digits = ss[idx]
 
 - Codes Glimpse:
 
-```javascript
+```
 ways = [1] + [0] * total
 for i in inputs:
     for j in range(1, total+1):
@@ -64,7 +64,7 @@ total_ways = ways[total]
 
 - Codes Glimpse:
 
-```javascript
+```
 sum_value = next(filter(lambda n: prime_ways(n) > threshold, itertools.count(2)))
 ```
 
