@@ -5,7 +5,7 @@ subtitle: Example Q&As
 gh-repo: ZhiQiu976/source-codes-tech-posts
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/banner-wood.jpg
-thumbnail-img: /assets/img/creating-perfect-event-websites.png
+thumbnail-img: /assets/img/math.jpg
 tags: [algorithm, string, dynamic programming, itertools]
 comments: true
 ---
