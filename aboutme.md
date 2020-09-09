@@ -22,7 +22,7 @@ I'm currently seeking a `full-time` **Data Scientist / Engineer** `position` pre
 
 ### My life
   
-I currently live in Durham, NC and really enjoy the weather and forests here. I like travelling, walking, sitcoms and kpop. I enjoy seeing old friends and meeting new people. Always open to talk and different ideas!
+I currently live in Durham, NC and really enjoy the weather and forests here. I like travelling, walking, sitcoms and kpop. I enjoy seeing old friends and meeting new people. Always open to talk and different ideas :bulb:!
 
 ![Crepe](/assets/img/image-duke.jpeg){: .mx-auto.d-block :}
 
