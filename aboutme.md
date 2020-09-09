@@ -18,12 +18,12 @@ I'm passionate about building Machine Learning models for `financial companies o
 
 I'm currently seeking a `full-time` **Data Scientist / Engineer** `position` preferably in the financial industry or the tech industry in the US, but I'm open to all opportunities anywhere. If you'd like to work together or know more about me, feel free to direct message me on [LinkedIn](https://www.linkedin.com/in/zhiqiu/) or [GitHub](https://github.com/ZhiQiu976). You can also approach me via `e-mail - zhi.qiu731@duke.edu`.
 
-![Crepe](/assets/img/hello_world.jpeg)
+![Crepe](/assets/img/image-duke.jpeg){: .mx-auto.d-block :}
 
 ### My life
   
 I currently live in Durham, NC and really enjoy the weather and forests here. I like travelling, walking, sitcoms and kpop. I enjoy seeing old friends and meeting new people. Always open to talk and different ideas!
 
-![Crepe](/assets/img/image-duke.jpeg){: .mx-auto.d-block :}
+
 
 
