@@ -16,7 +16,11 @@ This post will talk about some interesting programming problems in the famous [P
 
 ## [Euler Problem 8](https://projecteuler.net/problem=8)
 
+- Problem: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
 
+- Solution:
+
+- Codes Glimpse:
 
 
 
