@@ -36,7 +36,7 @@ thumbnail-img: /assets/img/hands.jpg
 
 
 
-
+![Crepe](/assets/img/banner-black.jpg){: .mx-auto.d-block :}
 
 ## Course Projects
 
