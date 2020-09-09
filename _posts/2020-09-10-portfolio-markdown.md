@@ -39,7 +39,7 @@ Here is a summary about my **Data Science portfolio**. Check this post for my `w
 
 
 
-&nbsp  
+<br />
 
 ## Course Projects
 
