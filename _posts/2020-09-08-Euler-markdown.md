@@ -26,5 +26,5 @@ Actually step 4 could be very time-consuming if you want to make your website fa
 
 You may also check its [GitHub repo](https://github.com/daattali/beautiful-jekyll), there is another detailed tutorial about how to construct a Jekyll website in a standard way (by using ruby gems, full tutorials could be find at [Jekyll's official website](https://jekyllrb.com/resources/)). That way is cerntainly much better than this simplified version of website construction since it is more stable and adjustable. Since my main goal of website construction is for short blog writing and projects summarising, and I want to keep this website as concise as possible, the modification way suits quite well for me at the current stage. Thus, always choose the most appropriate method according to your own need. Hope this post could also make certain contribution to our community by helping some entry-level learners who are in the same situation as me :)
 
-![Crepe](https://opensource.org/files/osi_keyhole_300X300_90ppi_0.png){: .mx-auto.d-block :}
+![Crepe](/assets/img/creating-perfect-event-websites.png){: .mx-auto.d-block :}
 
