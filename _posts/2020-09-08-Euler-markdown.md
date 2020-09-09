@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Project Euler
-subtitle: Example Q&A
+title:  Challenging and Interesting Programming Problems - the Project Euler
+subtitle: Example Q&As
 gh-repo: ZhiQiu976/source-codes-tech-posts
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/banner-wood.jpg
