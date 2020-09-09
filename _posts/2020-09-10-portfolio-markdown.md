@@ -8,6 +8,7 @@ thumbnail-img: /assets/img/hands.jpg
 
 Here is a summary about my Data Science portfolio. Check this post for my work and project experiences!
 
+
 ## Internship
 
 
