@@ -12,7 +12,7 @@ comments: true
 
 This is a tutorial to show you how to construct a personal website using GitHub pages and Jekyll within 4 steps. It may be unconventional, but it is far more convenient than self-writing the whole web page.
 
-**Here are the steps:**
+## Here are the steps:
 
 1. Google "Jekyll themes": Just go ahead and pick your favourite themes from the official Jekyll gallery websites or some posts advocating their own themes.
 
@@ -22,7 +22,7 @@ This is a tutorial to show you how to construct a personal website using GitHub 
 
 4. **Modify it**: Now you have already got your own web page `https://<yourusername>.github.io` (Thanks to GitHub, every user could have a free website!). The only thing left is to modify and customize. What we currently have is a pure copy of another person's website, so you would need to follow the instructions in that GitHub repo, read and understand the codes, then go construct your unique website :P
 
-Actually step 4 could be very time-consuming if you want to make your website fancy and well-organized, but it's always good to take use of the open-source codes and develop upon these. I guess that's why we all love communities like Github and that's how we develop our technical skills. Last but not least, do remember to respect the copyright. As you could see at the footer of my website, my website is modified from [Beautiful Jekyll](https://beautifuljekyll.com). I have changed the theme color and reorganized a little bit. If you like my particular design, you can clike on the Github signs above and simply star/fork [my repo](https://github.com/ZhiQiu976/ZhiQiu976.github.io).
+Actually `step 4` could be very time-consuming if you want to make your website fancy and well-organized, but it's always good to take use of the open-source codes and develop upon these. I guess that's why we all love communities like Github and that's how we develop our technical skills. Last but not least, do remember to respect the copyright. As you could see at the footer of my website, my website is modified from [Beautiful Jekyll](https://beautifuljekyll.com). I have changed the theme color and reorganized a little bit. If you like my particular design, you can clike on the Github signs above and simply star/fork [my repo](https://github.com/ZhiQiu976/ZhiQiu976.github.io).
 
 You may also check its [GitHub repo](https://github.com/daattali/beautiful-jekyll), there is another detailed tutorial about how to construct a Jekyll website in a standard way (by using ruby gems, full tutorials could be find at [Jekyll's official website](https://jekyllrb.com/resources/)). That way is cerntainly much better than this simplified version of website construction since it is more stable and adjustable. Since my main goal of website construction is for short blog writing and projects summarising, and I want to keep this website as concise as possible, the modification way suits quite well for me at the current stage. Thus, always choose the most appropriate method according to your own need. Hope this post could also make certain contribution to our community by helping some entry-level learners who are in the same situation as me :)
 
