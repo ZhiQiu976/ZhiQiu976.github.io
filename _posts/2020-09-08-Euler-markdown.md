@@ -22,7 +22,7 @@ This post will talk about some interesting programming problems in the famous [P
 
 - Codes Glimpse:
 
-`
+```
 ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
 ss = [list(map(int, s)) for s in ss]
 
@@ -31,7 +31,7 @@ idx = np.argmax(products)
 
 result = products[idx]
 digits = ss[idx]
-`
+```
 
 
 
