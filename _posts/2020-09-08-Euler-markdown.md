@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Challenging and Interesting Programming Problems - the Project Euler
+title:  Interesting Programming Problems - the Project Euler
 subtitle: Example Q&As
 gh-repo: ZhiQiu976/source-codes-tech-posts
 gh-badge: [star, fork, follow]
