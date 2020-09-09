@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Project Euler - Example Q&A
+title: Project Euler
+subtitle: Example Q&A
 gh-repo: ZhiQiu976/source-codes-tech-posts
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/banner-wood.jpg
