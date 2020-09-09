@@ -2,7 +2,7 @@
 layout: page
 title: Portfolio
 subtitle: Internship | Projects
-cover-img: /assets/img/banner-magic.jpg
+cover-img: /assets/img/cover-colorful.jpg
 thumbnail-img: /assets/img/hands.jpg
 ---
 
