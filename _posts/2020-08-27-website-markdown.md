@@ -4,6 +4,8 @@ title: How to construct a Personal Website
 subtitle: GitHub pages and Jekyll could make your life easier
 gh-repo: ZhiQiu976/ZhiQiu976.github.io
 gh-badge: [star, fork, follow]
+cover-img: /assets/img/steps-to-build-a-website.jpg
+thumbnail-img: /assets/img/creating-perfect-event-websites.png
 tags: [website, jekyll]
 comments: true
 ---
