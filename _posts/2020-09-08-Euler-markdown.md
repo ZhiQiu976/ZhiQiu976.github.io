@@ -31,6 +31,12 @@ This post will talk about some interesting programming problems in the famous [P
 
 
 
+![Crepe](/assets/img/math.jpg){: .mx-auto.d-block :}
+
+
+
+
+
 
 
 
