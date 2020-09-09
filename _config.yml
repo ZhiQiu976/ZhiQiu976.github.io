@@ -10,12 +10,11 @@ author: Zhi (Heather) Qiu
 
 navbar-links:
   About Me: "aboutme"
-  Projects: "projects"
-  Tech Posts:
+  Portfolio: "https://zhiqiu976.github.io/2020-09-10-portfolio-markdown/"
+  Tech Blogs:
     - Website Construction: "https://zhiqiu976.github.io/2020-08-27-website-markdown/"
-  Others:
-    - LinkedIn: "https://www.linkedin.com/in/zhiqiu/"
-    - GitHub: "https://github.com/ZhiQiu976"
+  LinkedIn: "https://www.linkedin.com/in/zhiqiu/"
+  GitHub: "https://github.com/ZhiQiu976"
   #Author's home: "https://deanattali.com"
 
 # --- Logo --- #
