@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio
+title: Heather's Portfolio
 subtitle: Internship | Projects
 cover-img: /assets/img/cover-colorful.jpg
 thumbnail-img: /assets/img/hands.jpg
@@ -39,7 +39,7 @@ Here is a summary about my **Data Science portfolio**. Check this post for my `w
 
 
 
-![Crepe](/assets/img/banner-black.jpg){: .mx-auto.d-block :}
+&nbsp  
 
 ## Course Projects
 
