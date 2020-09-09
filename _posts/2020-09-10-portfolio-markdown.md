@@ -2,6 +2,8 @@
 layout: page
 title: Projects
 subtitle: Internship & Course Projects
+cover-img: /assets/img/banner-black.jpg
+thumbnail-img: /assets/img/hello_world.jpeg
 ---
 
 ## Internship
@@ -33,6 +35,41 @@ subtitle: Internship & Course Projects
 
 
 ## Course Projects
+
+### [Bayesian Algorithm Implementation](https://github.com/ZhiQiu976/project-IBP-LGaussian-Algorithm-Implementation)
+
+- Worked in pair to implement an algorithm in Python for a paper about Indian Buffet Process Prior in an Infinite Latent Feature Model.
+- Conducted algorithm optimisation by using algorithm reorganisation, JIT and Cython and proved its applicability in both simulated and real-world datasets.
+- Built a PyPI package for future usage and finished a 10-page report for detailed algorithm explanation and performance evaluation.
+
+### [Predictive Modeling](https://github.com/ZhiQiu976/project-Predictive-Modelling)
+
+- Leaded a team of four to evaluate paintings' prices in 18th century Paris with R.
+- Conducted detailed EDA, missing data imputation, feature selection and attempted multiple ML models such as linear regression, BMA, Ridge/Lasso, CART, Boosting, Bagging etc.
+- Built a final MARS model with more than 90% accuracy, accomplished a final report of 19 pages, and demonstrated results to 45 people in a 10-minute group presentation with 5-page slides.
+
+### [Bike Share Prediction](https://github.com/ZhiQiu976/project-Bike-Share-Prediction)
+
+- Worked in a team of four to build a model for Capital Bike Share to construct a probability distribution for every user's bike end docking station.
+- Obtained and organised bike share data in 2013-2017 from various sources with R and API requested historical real-time whether data as supplementary data source.
+- Constructed probability distribution for 2018 data by calculating historical end docking station percentage within a certain time duration and used profiling and parallel computation to improve model speed.
+
+### [Spacial Data Analysis](https://github.com/ZhiQiu976/project-Spacial-Data-Analysis)
+
+- Worked in a team of three to conduct spacial data analysis in R to investigate competitive relationship between two shop brands Sheetz and Wawa.
+- Used web scraping and API requesting to collect data and finished a 7-page analysis with visualisations to explore the degree of overlapping in geography between the target brands.
+
+### [Facial Expression Recognition](https://github.com/ZhiQiu976/project-Facial-Expression-Recognition)
+
+- Worked in a group of five to build SVM Classifier, CNN and GNN models for facial expression recognition.
+- Evaluated model performance on FE2R013 and CK+ datasets and finished an 8-page paper about methods construction and model explanation.
+
+### [R Shiny Dashboard](https://github.com/ZhiQiu976/project-NewsHub-Rshiny)
+
+- Worked individually to implement complicated API requesting for breaking news headlines and historical articles accessing from over 30,000 news sources.
+- Created a well organised and aesthetically pleasing R Shiny news deck (dashboard) which serves as a central news hub for readers and customers.
+
+
 
 
 
