@@ -12,9 +12,11 @@ comments: true
 
 This post will talk about some interesting programming problems in the famous [Project Euler](https://projecteuler.net), which is a series of challenging mathematical 🧮 / computer programming ⌨️ problems that will require more than just mathematical insights to solve. As stated on the website, 'although **mathematics** will help you arrive at elegant and efficient methods, the use of a computer and **programming** skills will be required to solve most problems'. In the next few minutes, I'll walk you through some useful algorithms and codes that could solve `three typical mathe puzzles` 🧩 in Project Euler elegantly.
 
-**In the discussion below I would talk about the generalized version of the original problems. The exact answers to the original problems are shown [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-output.ipynb)**
+**In the discussion below I would talk about the generalized version of the original problems. The exact answers to the original problems are shown [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-output.ipynb).**
 
-**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and outputs.** [You can simply change the inputs in these .py files and get new outputs by re-running the scripts in your terminal.] ✨
+**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and outputs.**
+
+You can simply change the inputs in these .py files and get new outputs by re-running the scripts in your terminal. ✨
 
 <br />
 
