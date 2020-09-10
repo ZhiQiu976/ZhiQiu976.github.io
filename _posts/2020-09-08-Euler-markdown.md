@@ -14,7 +14,7 @@ This post will talk about some interesting programming problems in the famous [P
 
 **In the discussion below I would talk about the generalized version of the original problems. The exact answers to the original problems are shown [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-output.ipynb)**
 
-**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and outputs. You can change the inputs in the .py files and get new outputs by simply re-running these scripts in your terminal.**
+**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and outputs.** [You can simply change the inputs in these .py files and get new outputs by re-running the scripts in your terminal.]
 
 <br />
 
