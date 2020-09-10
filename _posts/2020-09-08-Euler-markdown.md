@@ -16,16 +16,16 @@ This post will talk about some interesting programming problems in the famous [P
 
 ## [Euler Problem 8](https://projecteuler.net/problem=8)
 
-- Problem: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
+- `Problem`: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
 
-- Solution: Firstly get the collection of all possible **thirteen adjacent digits** in the 1000-digit number. Then calculate the **product** of each 13-digit-set. Lastly find the maximum.
+- `Solution`: Firstly get the collection of all possible **thirteen adjacent digits** in the 1000-digit number. Then calculate the **product** of each 13-digit-set. Lastly find the maximum.
 
-- Notes: 
+- `Notes`: 
     - The solution logic of this problem is quite transparent and is quite simple to accomplish in coding. 
     - List comprehension could be very helpful.
     - Remember to take care of data types.
 <br />
-- Codes Glimpse:
+- `Codes Glimpse`:
 
 ```javascript
 ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
