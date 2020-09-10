@@ -28,7 +28,6 @@ This post will talk about some interesting programming problems in the famous [P
     - Remember to take care of data types.
     
 <br />
-
 - `Codes Glimpse`:
 
 ```javascript
