@@ -12,14 +12,15 @@ comments: true
 
 This post will talk about some interesting programming problems in the famous [Project Euler](https://projecteuler.net), which is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. As stated on the website, 'although **mathematics** will help you arrive at elegant and efficient methods, the use of a computer and **programming** skills will be required to solve most problems'. In the next few minutes, I'll walk you through some useful algorithms and codes that could solve `three typical mathe puzzles` in Project Euler elegantly.
 
-**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and outputs.**
+**In the discussion below I would talk about the generalized version of the original problems. The exact answers to the original problems are shown [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-output.ipynb)**
+
+**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and outputs. You can change the inputs in the .py files and get new outputs by simply re-running these scripts in your terminal.**
 
 <br />
 
 ## [Euler Problem 8](https://projecteuler.net/problem=8)
 
-- `Problem`: 
-    - Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
+- `Problem`: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
 
 - `Solution`: 
     - The solution logic of this problem is quite transparent: firstly get the collection of all possible **thirteen adjacent digits** in the 1000-digit number. Then calculate the **product** of each 13-digit-set. Lastly find the maximum.
@@ -49,8 +50,7 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 
 ## [Euler Problem 31](https://projecteuler.net/problem=31)
 
-- `Problem`: 
-    - Given a set of different denominations of coins, and a target amount of money, how many different ways can this amount of money be made using any number of coins?
+- `Problem`: Given a set of different denominations of coins, and a target amount of money, how many different ways can this amount of money be made using any number of coins?
 
 - `Solution`:
     - This problem can be done itertively but this method is computationally complex.
@@ -91,8 +91,7 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 
 ## [Euler Problem 77](https://projecteuler.net/problem=77)
 
-- `Problem`:
-    - What is the first value which can be written as the sum of primes in over a certain number (call it **threshold**) of different ways?
+- `Problem`: What is the first value which can be written as the sum of primes in over a certain number (call it **threshold**) of different ways?
 
 - `Solution`:
     - This problem is an upgraded version of `Problem 31`, so we can use exactly the **same** `dynamic programming` structure/function to compute the **total number of ways** of achieving a sum with a **list of different numbers**.
