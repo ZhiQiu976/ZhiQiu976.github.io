@@ -12,34 +12,42 @@ comments: true
 
 This post will talk about some interesting programming problems in the famous [Project Euler](https://projecteuler.net), which is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. As stated on the website, 'although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems'. In the next few minutes, I'll walk you through some useful algorithms and codes that could solve three typical mathe puzzles in Project Euler elegantly.
 
-**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and solutions.**
+**You can check the `Euler Project` folder in my `Github Repo` [ZhiQiu976/source-codes-tech-posts](https://github.com/ZhiQiu976/source-codes-tech-posts) for detailed scorce codes and outputs.**
 
 ## [Euler Problem 8](https://projecteuler.net/problem=8)
 
 - Problem: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
 
-- Solution:
+- Solution: Firstly get the collection of all possible **thirteen adjacent digits** in the 1000-digit number. Then calculate the **product** of each 13-digit-set. Lastly find the maximum.
+
+- Notes: 
+    - The solution logic of this problem is quite transparent and is quite simple to accomplish in coding. 
+    - List comprehension could be very helpful.
+    - Remember to take care of data types.
 
 - Codes Glimpse:
 
 ```javascript
 ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
-ss = [list(map(int, s)) for s in ss]
+ss = [list(map(int, s)) for s in ss] # turn into floating number
 
 products = [np.prod(s) for s in ss]
-idx = np.argmax(products)
+idx = np.argmax(products) # get the index of the maximum
 
 result = products[idx]
 digits = ss[idx]
 ```
 
+Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-8.py) to check the source .py file.
+
+<br />
 
 
 ## [Euler Problem 31](https://projecteuler.net/problem=31)
 
 - Problem: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
 
-- Solution:
+- Solution: We would firstly consider
 
 - Codes Glimpse:
 
