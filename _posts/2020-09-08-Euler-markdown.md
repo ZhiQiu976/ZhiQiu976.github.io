@@ -52,10 +52,12 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
     - This problem can be done itertively but this method is computationally complex.
     - We would use the idea of `dynamic programming` to improve programming efficiency.
     - The main idea is: 
-        - firstly we try only using the first denomination to achieve the amount of `[1, 2, ... , total]` and record the **number of ways**
-        - then add another denomination, we record the **number of ways** of using only these two denominations to achieve `[1, 2, ... , total]`
+        - Firstly we try only using the first denomination to achieve the amount of `[1, 2, ... , total]` and record the **number of ways**,
+        - then add another denomination, we record the **number of ways** of using only these two denominations to achieve `[1, 2, ... , total]`,
             - ![Crepe](/assets/img/Screenshot-1.png)
-            - the idea behind the above equation is that if you already have n ways to achieve amount j, the after including a denomination i, you still have n ways to achieve amount j + i
+            - The idea behind the above equation is that if you already have `n ways to achieve amount j`, the after including `a new denomination i`, you have exactly `n ways to achieve amount j + i`.
+        - next repeat this process until all the denominations get included, and the very last cell would be our answer.
+    - Note that the order of including different denominations doesn't matter.
 
 <br />
 **Codes Glimpse**:
@@ -64,7 +66,8 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 ways = [1] + [0] * total
 for i in inputs:
     for j in range(1, total+1):
-        if i <= j:
+        # if i > j, impossible to add this new denomination, then no new ways
+        if i <= j: 
             ways[j] += ways[j-i]
             
 total_ways = ways[total]
