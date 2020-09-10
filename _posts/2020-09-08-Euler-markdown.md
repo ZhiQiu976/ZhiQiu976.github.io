@@ -55,6 +55,7 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
         - firstly we try only using the first denomination to achieve the amount of `[1, 2, ... , total]` and record the **number of ways**
         - then add another denomination, we record the **number of ways** of using only these two denominations to achieve `[1, 2, ... , total]`
             - ![Crepe](/assets/img/Screenshot-1.png)
+            - the idea behind the above equation is that if you already have n ways to achieve amount j, the after including a denomination i, you still have n ways to achieve amount j + i
 
 <br />
 **Codes Glimpse**:
