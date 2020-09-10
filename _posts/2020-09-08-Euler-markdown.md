@@ -18,7 +18,8 @@ This post will talk about some interesting programming problems in the famous [P
 
 ## [Euler Problem 8](https://projecteuler.net/problem=8)
 
-- `Problem`: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
+- `Problem`: 
+    - Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
 
 - `Solution`: 
     - The solution logic of this problem is quite transparent: firstly get the collection of all possible **thirteen adjacent digits** in the 1000-digit number. Then calculate the **product** of each 13-digit-set. Lastly find the maximum.
@@ -48,7 +49,8 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 
 ## [Euler Problem 31](https://projecteuler.net/problem=31)
 
-- `Problem`: Given a set of different denominations of coins, and a target amount of money, how many different ways can this amount of money be made using any number of coins?
+- `Problem`: 
+    - Given a set of different denominations of coins, and a target amount of money, how many different ways can this amount of money be made using any number of coins?
 
 - `Solution`:
     - This problem can be done itertively but this method is computationally complex.
@@ -89,9 +91,10 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 
 ## [Euler Problem 77](https://projecteuler.net/problem=77)
 
-- Problem: What is the first value which can be written as the sum of primes in over a certain number (call it **threshold**) of different ways?
+- `Problem`:
+    - What is the first value which can be written as the sum of primes in over a certain number (call it **threshold**) of different ways?
 
-- Solution:
+- `Solution`:
     - This problem is an upgraded version of `Problem 31`, so we can use exactly the **same** `dynamic programming` structure/function to compute the **total number of ways** of achieving a sum with a **list of different numbers**.
     
     - Using `next`, `filter` and `itertools` to find this **list of different numbers**.
@@ -100,7 +103,8 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 **Codes Glimpse**:
 
 ```javascript
-sum_value = next(filter(lambda n: prime_ways(n) > threshold, itertools.count(2)))
+sum_value = next(filter(lambda n: prime_ways(n) > threshold,
+                        itertools.count(2)))
 ```
 
 Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-77.py) to check the source .py file.
