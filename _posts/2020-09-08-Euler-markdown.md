@@ -50,9 +50,9 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 
 - `Solution`:
     - This problem can be done itertively but this method is computationally complex.
-    - We would use the idea of `dynamic programming`to improve programming efficiency.
-    - The main idea is the below formula:
-      ![Crepe](/assets/img/CodeCogsEqn.gif){: .mx-auto.d-block :}
+    - We would use the idea of `dynamic programming` to improve programming efficiency.
+    - The main idea is: 
+        - firstly we try only using the first denomination to achieve the amount of `[1, 2, ... , total]`
 
 <br />
 **Codes Glimpse**:
