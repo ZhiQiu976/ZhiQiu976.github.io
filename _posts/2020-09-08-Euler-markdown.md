@@ -87,11 +87,15 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 
 ## [Euler Problem 77](https://projecteuler.net/problem=77)
 
-- Problem: Given a 1000-digit number, what are the thirteen adjacent digits in this number that could give the greatest elementwise product? What is the value of this product?
+- Problem: What is the first value which can be written as the sum of primes in over a certain number (call it **threshold**) of different ways?
 
 - Solution:
+    - This problem is an upgraded version of `Problem 31`, so we can use exactly the same coding structure to compute `total number of ways` of achieving a sum with a **list of different numbers**.
+    
+    - Using `next`, `filter` and `itertools` to find this **list of different numbers**.
 
-- Codes Glimpse:
+<br />
+**Codes Glimpse**:
 
 ```javascript
 sum_value = next(filter(lambda n: prime_ways(n) > threshold, itertools.count(2)))
