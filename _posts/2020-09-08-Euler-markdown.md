@@ -22,7 +22,9 @@ This post will talk about some interesting programming problems in the famous [P
 
 - `Solution`: 
     - The solution logic of this problem is quite transparent: firstly get the collection of all possible **thirteen adjacent digits** in the 1000-digit number. Then calculate the **product** of each 13-digit-set. Lastly find the maximum.
+    
     - This logic is quite simple to accomplish in coding. `List comprehension` could be very helpful here.
+    
     - Remember to take care of data types.
      
 <br />
@@ -54,17 +56,17 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
     - We would use the idea of `dynamic programming` to improve programming efficiency.
     
     - The main idea is: 
-        - Firstly we try only using the first denomination to achieve the amount of `[1, 2, ... , total]` and record the **number of ways**,
+        - Firstly we try only using the first denomination to achieve the amount of **[1, 2, ... , total]** and record the **number of ways**,
         
-        - then add another denomination, we record the **number of ways** of using only these two denominations to achieve `[1, 2, ... , total]`,
+        - then add another denomination, we record the **number of ways** of using only these two denominations to achieve **[1, 2, ... , total]**,
         
             - ![Crepe](/assets/img/Screenshot-1.png)
             
-            - The idea behind the above equation is that if you already have `n ways to achieve amount j`, the after including `a new denomination i`, you have exactly `n ways to achieve amount j + i`.
+            - The idea behind the above equation is that if you already have **n** ways to achieve amount **j**, the after including a new denomination **i**, you have exactly **n** ways to achieve amount **j + i**.
             
         - next repeat this process until all the denominations get included, and the very last cell would be our answer.
         
-    - Note that the order of including different denominations doesn't matter.
+    - Note that the order of including different denominations doesn't matter here.
 
 <br />
 **Codes Glimpse**:
@@ -90,7 +92,7 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 - Problem: What is the first value which can be written as the sum of primes in over a certain number (call it **threshold**) of different ways?
 
 - Solution:
-    - This problem is an upgraded version of `Problem 31`, so we can use exactly the same coding structure to compute `total number of ways` of achieving a sum with a **list of different numbers**.
+    - This problem is an upgraded version of `Problem 31`, so we can use exactly the **same** `dynamic programming` structure/function to compute the **total number of ways** of achieving a sum with a **list of different numbers**.
     
     - Using `next`, `filter` and `itertools` to find this **list of different numbers**.
 
