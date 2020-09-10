@@ -24,7 +24,9 @@ This post will talk about some interesting programming problems in the famous [P
     - The solution logic of this problem is quite transparent and is quite simple to accomplish in coding. 
     - List comprehension could be very helpful.
     - Remember to take care of data types.
+    
 <br />
+
 - `Codes Glimpse`:
 
 ```javascript
