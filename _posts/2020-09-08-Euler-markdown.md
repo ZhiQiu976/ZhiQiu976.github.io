@@ -28,7 +28,7 @@ This post will talk about some interesting programming problems in the famous [P
     - Remember to take care of data types.
     
 <br />
-- `Codes Glimpse`:
+**`Codes Glimpse`**:
 
 ```javascript
 ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
