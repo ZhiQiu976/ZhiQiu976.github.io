@@ -35,14 +35,41 @@ You can simply change the inputs in these .py files and get new outputs by re-ru
 **Codes Glimpse** 👀
 
 ```javascript
-ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
-ss = [list(map(int, s)) for s in ss] # turn into floating number
-
-products = [np.prod(s) for s in ss]
-idx = np.argmax(products) # get the index of the maximum
-
-result = products[idx]
-digits = ss[idx]
+def compute(s, n):
+    '''
+    Function for solving Project Euler Problem 8.
+    Parameters
+    ----------
+    s : str
+        The original input string of the 1000-digit number, 
+        with a line break every 50 digits.
+    n : int
+        Number of adjacent digits that wants to find greatest product with.
+    Returns
+    -------
+    digits : list of int
+        The n adjacent digits in the input 1000-digit number that 
+        have the greatest product.
+    result : int
+        The value of this greatest product.
+        
+    '''
+    
+    # rearrange the original string
+    xs = ''.join(s.split())
+    # get the adjacent digits
+    ss = [list(xs[i : i+n]) for i in range(1000 - (n-1))]
+    # turn into floating number
+    ss = [list(map(int, s)) for s in ss]
+    # calculate productes
+    products = [np.prod(s) for s in ss]
+    # find the maximum
+    idx = np.argmax(products)
+    
+    result = products[idx]
+    digits = ss[idx]
+    
+    return digits, result
 ```
 
 Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-8.py) to check the source .py file.
@@ -76,14 +103,41 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 **Codes Glimpse** 👀
 
 ```javascript
-ways = [1] + [0] * total
-for i in inputs:
-    for j in range(1, total+1):
-        # if i > j, impossible to add this new denomination, then no new ways
-        if i <= j: 
-            ways[j] += ways[j-i]
-            
-total_ways = ways[total]
+def compute(inputs, total):
+    '''
+    Function for solving Project Euler Problem 31. Dynamic programming.
+    Parameters
+    ----------
+    inputs : list of int
+        The original input value set.
+    total : int
+        The target total sum.
+    Returns
+    -------
+    total_ways : int
+        The number of combinations of the inputs that 
+        could sum up to the target total.
+        
+    '''
+    
+    # At the beginning of each loop iteration,
+    # ways[j] is the number of combinations of using the coin values before i
+    # to form a sum of j
+    
+    # the list is updated within each loop
+    # then get the final total number of ways to sum up to the target total
+    # in the ways[total] cell
+    
+    # using Dynamic Programming algorithm
+    
+    ways = [1] + [0] * total
+    for i in inputs:
+        for j in range(1, total+1):
+            if i <= j:
+                ways[j] += ways[j-i]
+    total_ways = ways[total]
+    
+    return total_ways
 ```
 
 Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-31.py) to check the source .py file.
@@ -104,8 +158,58 @@ Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Eu
 **Codes Glimpse** 👀
 
 ```javascript
-sum_value = next(filter(lambda n: prime_ways(n) > threshold,
-                        itertools.count(2)))
+def prime_ways(n):
+    '''
+    Function to calculate how many different ways can an integer n 
+    be written as the sum of primes.
+    Parameters
+    ----------
+    n : int
+        The number to be calculated with.
+    Returns
+    -------
+    num_ways : int
+        The total number of ways of different combinations.
+    '''
+    
+    # get the primes before n (includes n)
+    primes_set = primes(n)
+    
+    # dynamic programming
+    ways = [1] + [0] * n
+    for p in primes_set:
+        for j in range(1, n+1):
+            if p <= j:
+                ways[j] += ways[j-p]
+            
+    num_ways = ways[n]
+    
+    return num_ways
+```
+
+
+```javascript
+def compute(threshold):
+    '''
+    The main function for finding the target number for Euler problem 77.
+    Get the first value which can be written as the sum of primes in over
+    the threshold number of different ways.
+    Parameters
+    ----------
+    threshold : int
+        The threshold number of ways.
+    Returns
+    -------
+    sum_value : int
+        The target sum of primes.
+    '''
+    
+    # get the first item from an iterable that matches a condition
+    sum_value = next(filter(lambda n: prime_ways(n) > threshold,
+                            itertools.count(2)))
+    # starts from 2, step = 1
+    
+    return sum_value
 ```
 
 Clike [here](https://github.com/ZhiQiu976/source-codes-tech-posts/blob/master/Euler%20Project/Euler-problem-77.py) to check the source .py file.
