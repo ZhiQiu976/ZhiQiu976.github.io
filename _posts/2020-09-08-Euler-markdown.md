@@ -187,6 +187,7 @@ def prime_ways(n):
     return num_ways
 ```
 
+<br />
 
 ```javascript
 def compute(threshold):
