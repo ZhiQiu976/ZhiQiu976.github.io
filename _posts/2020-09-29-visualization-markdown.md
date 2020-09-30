@@ -5,7 +5,7 @@ subtitle: 3 visualizations worth attention
 gh-repo: ZhiQiu976/source-codes-tech-posts
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/hello_world.jpeg
 tags: [website, jekyll]
 comments: true
 ---
@@ -50,7 +50,7 @@ From this plot we can see that **children under 5 years old** are most susceptib
 
 In summary, Malaria is not a very severe global disease anymore but is still worth attention in `low income entities`. It is most susceptible for `children under 5 years old` in these countries and thus we should **invest more in health care for young child in poor countries** so as to prevent them from suffering Malaria.
 
-
+![pic](/assets/img/thumb.png){: .mx-auto.d-block :}
 
 
 
