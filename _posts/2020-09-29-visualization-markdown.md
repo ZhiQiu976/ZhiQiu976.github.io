@@ -6,7 +6,7 @@ gh-repo: ZhiQiu976/source-codes-tech-posts
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/hello_world.jpeg
-tags: [website, jekyll]
+tags: [visualization, data analysis]
 comments: true
 ---
 
