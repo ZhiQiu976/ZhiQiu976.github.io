@@ -10,12 +10,13 @@ author: Zhi (Heather) Qiu
 
 navbar-links:
   About Me: "aboutme"
-  Portfolio: "https://zhiqiu976.github.io/2020-10-09-portfolio-markdown/"
+  Portfolio: "https://zhiqiu976.github.io/2020-10-23-portfolio-markdown/"
   Blogs:
     - Website Construction: "https://zhiqiu976.github.io/2020-08-27-website-markdown/"
     - Euler Programming: "https://zhiqiu976.github.io/2020-09-08-Euler-markdown/"
     - Malaria Investigation: "https://zhiqiu976.github.io/2020-09-29-visualization-markdown/"
     - SQL for Spotify: "https://zhiqiu976.github.io/2020-10-08-Spotify-markdown/"
+    - API requesting: "https://zhiqiu976.github.io/2020-10-22-starwars-markdown/"
   LinkedIn: "https://www.linkedin.com/in/zhiqiu/"
   GitHub: "https://github.com/ZhiQiu976"
   #Author's home: "https://deanattali.com"
