@@ -4,8 +4,8 @@ title:  Constructing Python Dashboard/Small App with Streamlit
 subtitle: Analysis for 2017 Doctorate Recipients Dataset
 gh-repo: ZhiQiu976/Streamlit-Dashboard
 gh-badge: [star, fork, follow]
-cover-img: /assets/img/yoda.jpeg
-thumbnail-img: /assets/img/starwars.png
+cover-img: /assets/img/dashboard.png
+thumbnail-img: /assets/img/streamlit.png
 tags: [dashboard, Streamlit, Heroku, app, visualization]
 comments: true
 ---
@@ -22,7 +22,27 @@ The [2017 Doctorate Recipients Dataset](https://ncses.nsf.gov/pubs/nsf19301/data
 
 Firstly I did some pre-processing for the excel data to make them more suitable for plotting and visualization (details included in the [pre-processing notebook](https://github.com/ZhiQiu976/Streamlit-Dashboard/blob/main/pre-processing%20for%20tables.ipynb)).
 
-For the first three tables oprations are quite simple, mainly about formatting. As for the last Table, it is kind of a nested shape, so I transformed its structure a little bit.
+For the first three tables oprations are quite simple, mainly about formatting. 
+
+```javascript
+# table 1
+df = pd.read_excel('sed17-sr-tab001.xlsx', skiprows=3)
+df.iloc[18,2] = 0
+df.to_excel('df.xlsx')
+
+# table 5
+df2 = pd.read_excel('sed17-sr-tab005.xlsx', skiprows=3)
+df2 = df2.iloc[:-2,:]
+df2 = df2.set_index('Rank')
+df2.to_excel('df2.xlsx')
+
+# table 3
+df3 = pd.read_excel('sed17-sr-tab003.xlsx', skiprows=3)
+df3 = df3.set_index('Rank')
+df3.to_excel('df3.xlsx')
+```
+
+As for the last Table, it is kind of a nested shape, so I transformed its structure a little bit.
 
 **Before**
 
@@ -33,7 +53,29 @@ For the first three tables oprations are quite simple, mainly about formatting. 
 ![image3](/assets/img/g2.png){: .mx-auto.d-block :}
     
 <br /> 
+
+```javascript
+# table 6
+df4 = pd.read_excel("sed17-sr-tab006.xlsx", skiprows=3).loc[1:,].reset_index(drop=True)
+
+def func(i, x):
+    '''
+    Helper function for data transformation.
+    '''
+    
+    temp = df4.iloc[:, [0, 2*i+1, 2*i+2]]
+    temp.columns = ['State or location', 'Male', 'Female']
+    temp = temp.melt(id_vars = 'State or location', var_name = 'sex')
+    temp["field"] = x
+    return temp
+
+df4_new = pd.concat([func(i, x) for i, x in enumerate(df4.columns[1::2])]).reset_index(drop=True)
+df4_new = df4_new.loc[np.logical_and(df4_new["value"] != 0, df4_new["value"] != 'D'),].reset_index(drop=True)
+df4_new.to_excel('df4_new.xlsx')
+```
  
+<br /> 
+
 # Visual
 
 **[Dashboard Link](https://tranquil-shelf-65765.herokuapp.com)**
@@ -161,7 +203,7 @@ st.altair_chart(graph, use_container_width=True)
 The deployment procedure requires opening an account on [Heroku](https://signup.heroku.com/t/platform?c=70130000000NZToAAO&gclid=Cj0KCQiAhZT9BRDmARIsAN2E-J0neOTuMFKjU_5XcTFj0g_50syoK-pGXQ6p9fTLCs9nfrJ6aJiafhYaAtFBEALw_wcB), creating a corresponding [Github repository](https://github.com/ZhiQiu976/Streamlit-Dashboard), adding some configuration files and a final building. Detailed tutorials could be found on `Heroku`'s official website and the post attatched [How to Build a Streamlit App in Python](https://pythonforundergradengineers.com/streamlit-app-with-bokeh.html).
 
 
-
+<br /> 
 
 
 
