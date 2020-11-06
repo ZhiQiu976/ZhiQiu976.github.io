@@ -36,6 +36,8 @@ For the first three tables oprations are quite simple, mainly about formatting. 
  
 # Visual
 
+**[Dashboard Link](https://tranquil-shelf-65765.herokuapp.com)**
+
 In general the design of my dashboard is quite flexible.
 
 In general there are three main sections/categories: `Recipients Info`, `Institutions Info - Ranking`, `Institutions Info - Disciplinary`, which could be chosen from the scroll-down button in the side bar.
@@ -48,6 +50,8 @@ session = st.sidebar.selectbox("Category", ["Recipients Info", "Institutions Inf
 
 ![image3](/assets/img/g3.png){: .mx-auto.d-block :}
 
+<br /> 
+
 In the `Recipients Info` category, there are two types of animated graphs for two main variables: `Number of Doctorate Recipents` and `Percentage Change from Previous Year`.
 
 ![image3](/assets/img/g4.png){: .mx-auto.d-block :}
@@ -55,6 +59,43 @@ In the `Recipients Info` category, there are two types of animated graphs for tw
 <br /> 
 
 ![image3](/assets/img/g5.png){: .mx-auto.d-block :}
+
+The animated labels are achieved by the following codes (templates can de found from the [Altair Library](https://altair-viz.github.io)): 
+
+```javascript
+# Transparent selectors across the chart. This is what tells us
+# the x-value of the cursor
+selectors = alt.Chart(source).mark_point().encode(
+    x='year',
+    opacity=alt.value(0),
+).add_selection(
+    nearest
+)
+
+# Draw points on the line, and highlight based on selection
+points = line.mark_point().encode(
+    opacity=alt.condition(nearest, alt.value(1), alt.value(0))
+)
+
+# Draw text labels near the points, and highlight based on selection
+text = line.mark_text(align='left', dx=5, dy=-5).encode(
+    text=alt.condition(nearest, 'y:Q', alt.value(' '))
+)
+
+# Draw a rule at the location of the selection
+rules = alt.Chart(source).mark_rule(color='gray').encode(
+    x='year',
+).transform_filter(
+    nearest
+)
+
+# Put the five layers into a chart and bind the data
+output = alt.layer(
+    line, selectors, points, rules, text
+).properties(
+    width=600, height=300
+)
+```
 
 For either plot we can use the slider in the side bar to choose the **year range** we want to look at:
 
@@ -68,27 +109,58 @@ year_range =  st.sidebar.slider('Select a range of years',
 
 ![image4](/assets/img/g6.png){: .mx-auto.d-block :}
 
+<br /> 
 
+In the `Institutions Info - Ranking` category, we can checking **top-50** rankings about number of **Doctorate recipients** for either `State` or `University` and use the slider on the left to choose our desired range of ranking:
 
+![image4](/assets/img/g7.png){: .mx-auto.d-block :}
 
-
-
-
-Now the only thing left is to handle the nested `film` column and doing one more round of **API requesting** to get the film names:
+<br /> 
 
 ```javascript
-oldest_films = [requests.get(y).json() for x in oldest.films for y in x]
+#sidebar
+st.sidebar.subheader("Institutions Info - Ranking")
+rank_range =  st.sidebar.slider('Select the ranking you want to see',
+                                min(df3.Rank+1), max(df3.Rank), (1, 5))
+
+if mode == 'State':
+    rank = [i in range(rank_range[0],rank_range[1]+1) for i in df2.Rank]
+    filtered = df2[rank]
+    st.table(filtered)
+
+
+elif mode == 'University':
+    rank = [i in range(rank_range[0],rank_range[1]+1) for i in df3.Rank]
+    filtered = df3[rank]
+    st.table(filtered)
+```
+<br /> 
+
+In the `Institutions Info - Disciplinary` category, we can checking **doctorate recipients'** `female-male distribution` in `different states` with respect to `different fields/disciplines`:
+
+![image3](/assets/img/g8.png){: .mx-auto.d-block :}
+
+<br /> 
+
+![image3](/assets/img/g9.png){: .mx-auto.d-block :}
+
+<br /> 
+
+```javascript
+graph = alt.Chart(tmp).mark_line(point=True).encode(
+    x = 'State or location', 
+    y = 'value',
+    color='sex:N').interactive()
+st.altair_chart(graph, use_container_width=True)
 ```
 
 <br /> 
 
-![image5](/assets/img/results.png){: .mx-auto.d-block :}
+# Deployment
 
-Below are the links/APIs I find very useful for dashboard construction and deployment ⭐:
+The deployment procedure requires opening an account on [Heroku](https://signup.heroku.com/t/platform?c=70130000000NZToAAO&gclid=Cj0KCQiAhZT9BRDmARIsAN2E-J0neOTuMFKjU_5XcTFj0g_50syoK-pGXQ6p9fTLCs9nfrJ6aJiafhYaAtFBEALw_wcB), creating a corresponding [Github repository](https://github.com/ZhiQiu976/Streamlit-Dashboard), adding some configuration files and a final building. Detailed tutorials could be found on `Heroku`'s official website and the post attatched [How to Build a Streamlit App in Python](https://pythonforundergradengineers.com/streamlit-app-with-bokeh.html).
 
-- [How to Build a Streamlit App in Python](https://pythonforundergradengineers.com/streamlit-app-with-bokeh.html)
 
-- [Altair: Declarative Visualization in Python](https://altair-viz.github.io)
 
 
 
