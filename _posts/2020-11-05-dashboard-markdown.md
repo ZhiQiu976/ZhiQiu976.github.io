@@ -6,7 +6,7 @@ gh-repo: ZhiQiu976/Streamlit-Dashboard
 gh-badge: [star, fork, follow]
 cover-img: /assets/img/yoda.jpeg
 thumbnail-img: /assets/img/starwars.png
-tags: [api request, json]
+tags: [dashboard, Streamlit, Heroku, app, visualization]
 comments: true
 ---
 
@@ -30,34 +30,49 @@ For the first three tables oprations are quite simple, mainly about formatting. 
 
 **After**
 
-![image3](/assets/img/g1.png){: .mx-auto.d-block :}
+![image3](/assets/img/g2.png){: .mx-auto.d-block :}
     
 <br /> 
  
 # Visual
 
-By doing some simple explorations we could find that the `birth_year` column basically has two types of entries: the **unknowns** who we don't know their age and the **BBYs** who were born **Before Battle of Yavin**.
+In general the design of my dashboard is quite flexible.
 
-Therefore, we onld only look at the ones we have age information about: the BBYs.
-
-```javascript
-BBY = people_df[people_df.birth_year.str.endswith('BBY')] # filter out the BBYs
-
-# remove the redundant words 'BBY'
-BBY = BBY.assign(birth_year = BBY['birth_year'].map(lambda x: float(x.rstrip('BBY'))))
-```
-
-After filtering out the BBYs and remove the redundant string, we could easily find the oldest one by `sorting`:
+In general there are three main sections/categories: `Recipients Info`, `Institutions Info - Ranking`, `Institutions Info - Disciplinary`, which could be chosen from the scroll-down button in the side bar.
 
 ```javascript
-oldest = BBY.sort_values('birth_year', ascending=False).head(1)
+session = st.sidebar.selectbox("Category", ["Recipients Info", "Institutions Info - Ranking", "Institutions Info - Disciplinary"])
 ```
 
 <br /> 
 
-![image4](/assets/img/starwars_df2.png){: .mx-auto.d-block :}
+![image3](/assets/img/g3.png){: .mx-auto.d-block :}
 
-It turns out that [Yoda](https://starwars.fandom.com/wiki/Yoda) is the one we want to find!
+In the `Recipients Info` category, there are two types of animated graphs for two main variables: `Number of Doctorate Recipents` and `Percentage Change from Previous Year`.
+
+![image3](/assets/img/g4.png){: .mx-auto.d-block :}
+
+<br /> 
+
+![image3](/assets/img/g5.png){: .mx-auto.d-block :}
+
+For either plot we can use the slider in the side bar to choose the **year range** we want to look at:
+
+```javascript
+st.sidebar.subheader("Recipients Info")
+year_range =  st.sidebar.slider('Select a range of years',
+    min(df.Year+1), max(df.Year), (1990, 2005))
+```
+
+<br /> 
+
+![image4](/assets/img/g6.png){: .mx-auto.d-block :}
+
+
+
+
+
+
 
 Now the only thing left is to handle the nested `film` column and doing one more round of **API requesting** to get the film names:
 
