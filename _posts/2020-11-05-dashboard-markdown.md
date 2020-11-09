@@ -22,8 +22,9 @@ This is the dashboard I built ✨
 
 **Details about `how to play around with it` and `how to deploy a dashboard` are included respectively in the `Visual` section and `Deployment` section below.**
 
-<iframe width=800 height=600 frameborder=0 scrolling="auto" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
+<iframe width=800 height=600 frameborder=0 scrolling="yes" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
 
+<br />
 
 # Data
 
