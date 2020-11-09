@@ -7,6 +7,7 @@ gh-badge: [star, fork, follow]
 cover-img: /assets/img/dashboard.png
 thumbnail-img: /assets/img/streamlit.png
 tags: [dashboard, Streamlit, Heroku, app, visualization]
+full-width: true
 comments: true
 ---
 
@@ -18,7 +19,11 @@ My final dashboard can be accessed via this [link](https://tranquil-shelf-65765.
 
 # The Dashboard
 
-<iframe width=900 height=750 frameborder=0 scrolling="no" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
+This is the dashboard I built ✨ 
+
+**Details about `how to play around with it` and `how to deploy a dashboard` are included respectively in the `Visual` section and `Deployment` section below.**
+
+<iframe width=1100 height=750 frameborder=0 scrolling="no" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
 
 
 # Data
