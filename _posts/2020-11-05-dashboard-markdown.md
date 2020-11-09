@@ -12,13 +12,13 @@ comments: true
 
 This post is about doing data analysis and visualization for the [2017 Doctorate Recipients Dataset](https://ncses.nsf.gov/pubs/nsf19301/data) and constructing a dashboard with [Streamlit](https://www.streamlit.io) for results demonstration. Note that dashboard built with `Streamlit` originally can only be accessed locally, but we can use [Heroku](https://signup.heroku.com/t/platform?c=70130000000NZToAAO&gclid=Cj0KCQiAhZT9BRDmARIsAN2E-J0neOTuMFKjU_5XcTFj0g_50syoK-pGXQ6p9fTLCs9nfrJ6aJiafhYaAtFBEALw_wcB) to built a small app and make this dashboard online and public!
 
-My final dashboard can be accessed via this [link](https://tranquil-shelf-65765.herokuapp.com) and the source codes could be find on my [Streamlit-Dashboard](https://github.com/ZhiQiu976/Streamlit-Dashboard) branch at GitHub.
+My final dashboard can be accessed via this [link](https://tranquil-shelf-65765.herokuapp.com) (it may take some time to load in 😛) and the source codes could be find on my [Streamlit-Dashboard](https://github.com/ZhiQiu976/Streamlit-Dashboard) branch at GitHub.
 
 <br />
 
 # The Dashboard
 
-<iframe width=1200 height= 1500 frameborder=0 scrolling="no" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
+<iframe width=900 height=750 frameborder=0 scrolling="no" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
 
 
 # Data
