@@ -7,7 +7,6 @@ gh-badge: [star, fork, follow]
 cover-img: /assets/img/dashboard.png
 thumbnail-img: /assets/img/streamlit.png
 tags: [dashboard, Streamlit, Heroku, app, visualization]
-full-width: true
 comments: true
 ---
 
