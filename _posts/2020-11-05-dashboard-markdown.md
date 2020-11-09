@@ -18,7 +18,7 @@ My final dashboard can be accessed via this [link](https://tranquil-shelf-65765.
 
 # The Dashboard
 
-This is the dashboard I built ✨ 
+This is the dashboard I built ✨ (Use the `chevron-right` badge to display the `sidebar`.)
 
 **Details about `how to play around with it` and `how to deploy a dashboard` are included respectively in the `Visual` section and `Deployment` section below.**
 
