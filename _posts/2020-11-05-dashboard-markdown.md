@@ -16,6 +16,11 @@ My final dashboard can be accessed via this [link](https://tranquil-shelf-65765.
 
 <br />
 
+# The Dashboard
+
+<iframe width=1200 height= 1500 frameborder=0 scrolling="no" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
+
+
 # Data
 
 The [2017 Doctorate Recipients Dataset](https://ncses.nsf.gov/pubs/nsf19301/data) is quite a rich dateset and contains a lot of information. My analysis mainly focus on information about recipents and institutions. The tables I used are `Table 1, Table 3, Table 5 and Table 6`.
@@ -206,8 +211,6 @@ The deployment procedure requires opening an account on [Heroku](https://signup.
 <br /> 
 
 
-# Final Dashboard
 
-<iframe width=1200 height= 1500 frameborder=0 scrolling="no" src="https://tranquil-shelf-65765.herokuapp.com"></iframe> 
 
 
