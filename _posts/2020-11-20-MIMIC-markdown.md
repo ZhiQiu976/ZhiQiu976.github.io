@@ -115,7 +115,7 @@ df_new = df.drop(['DISCHARGE_LOCATION', 'SUBJECT_ID', 'HADM_ID', 'icustay_id',
 
 ![image](/assets/img/mimic5.png){: .mx-auto.d-block :}
 
-    - Step 4.1 **One-Hot Encoding**
+- Step 4.1 **One-Hot Encoding**
 
 ```javascript
 df_new = pd.concat([df_new, pd.get_dummies(df_new['ADMISSION_TYPE'])], axis=1).drop(
@@ -189,7 +189,7 @@ df_new = pd.concat([df_new, pd.get_dummies(df_new['DIAGNOSIS'])], axis=1).drop(
 ```
 <br /> 
 
-    - Step 4.2 **Missing Data Imputation**: 'HeartRate_Mean', 'SysBP_Mean', 'DiasBP_Mean', 'TempC_Max', 'RespRate_Mean', 'Glucose_Mean', 'Weight' needs further imputation and evluation of imputation methods are checked by logistic regression. After attemption, I found `Univariate Feature Imputation` works the best on our data (Multivariate Feature Imputation doesn't perform well and Nearest Neighbors Imputation tends to overfit.) **Note: Variables with too much missing (>50%) are totally removed.**
+- Step 4.2 **Missing Data Imputation**: 'HeartRate_Mean', 'SysBP_Mean', 'DiasBP_Mean', 'TempC_Max', 'RespRate_Mean', 'Glucose_Mean', 'Weight' needs further imputation and evluation of imputation methods are checked by logistic regression. After attemption, I found `Univariate Feature Imputation` works the best on our data (Multivariate Feature Imputation doesn't perform well and Nearest Neighbors Imputation tends to overfit.) **Note: Variables with too much missing (>50%) are totally removed.**
 
 ```javascript
 df_new['ICU_LOS'] = df_new['ICU_LOS'].fillna(0)
