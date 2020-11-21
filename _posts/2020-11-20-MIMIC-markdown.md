@@ -115,7 +115,7 @@ df_new = df.drop(['DISCHARGE_LOCATION', 'SUBJECT_ID', 'HADM_ID', 'icustay_id',
 
 ![image](/assets/img/mimic5.png){: .mx-auto.d-block :}
 
-- **ONe-Hot Encoding**
+    - Step 4.1 **One-Hot Encoding**
 
 ```javascript
 df_new = pd.concat([df_new, pd.get_dummies(df_new['ADMISSION_TYPE'])], axis=1).drop(
@@ -189,7 +189,7 @@ df_new = pd.concat([df_new, pd.get_dummies(df_new['DIAGNOSIS'])], axis=1).drop(
 ```
 <br /> 
 
-- **Missing Data Imputation**: 'HeartRate_Mean', 'SysBP_Mean', 'DiasBP_Mean', 'TempC_Max', 'RespRate_Mean', 'Glucose_Mean', 'Weight' needs further imputation and evluation of imputation methods are checked by logistic regression. After attemption, I found `Univariate Feature Imputation` works the best on our data (Multivariate Feature Imputation doesn't perform well and Nearest Neighbors Imputation tends to overfit.) **Note: Variables with too much missing (>50%) are totally removed.**
+    - Step 4.2 **Missing Data Imputation**: 'HeartRate_Mean', 'SysBP_Mean', 'DiasBP_Mean', 'TempC_Max', 'RespRate_Mean', 'Glucose_Mean', 'Weight' needs further imputation and evluation of imputation methods are checked by logistic regression. After attemption, I found `Univariate Feature Imputation` works the best on our data (Multivariate Feature Imputation doesn't perform well and Nearest Neighbors Imputation tends to overfit.) **Note: Variables with too much missing (>50%) are totally removed.**
 
 ```javascript
 df_new['ICU_LOS'] = df_new['ICU_LOS'].fillna(0)
@@ -217,7 +217,7 @@ As indicated by the results above, compared to the `dummy classifier` (59% accur
 
 - Step 2. Next I attempted to do some clustering checking by the `Elbow Method` (**WCSS plot with K-means**) and found that there indeed exist 4 clusters for our data. Then I attempted to add `results` of **a K-means model with 4 clusters** as a new feature, but simple checking with **LightGBM** (used this model for checking beacuse it is very fast to run) showed that adding such a feature would not improve accuracy.
 
-- Step 3. Therfore, I kept using the features we engineered as in the `ETL, EDA and Data Cleaning` section and started `SVM` model tuning. I firstly attempted `Random Grid Search` but this method actually did not help a lot with tailoring good parameters. Thus, I kept using `3-fold Grid Search` (used 3-fold for speed and to avoid overfitting) for **parameter fine tuning**. I **attempted multiple grid search plans** basing on previous plan's result (one **example search plan** is shown below) and the **final paremater set** is as the following: ```{'C': 1.0, 'decision_function_shape': 'ovo', 'degree': 5, 'kernel': 'poly'}```.
+- Step 3. Therfore, I kept using the features we engineered as in the `ETL, EDA and Data Cleaning` section and started `SVM` model tuning. I firstly attempted `Random Grid Search` but this method actually did not help a lot with tailoring good parameters. Thus, I kept using `3-fold Grid Search` (used 3-fold for speed and to avoid overfitting) for **parameter fine tuning**. I attempted **multiple grid search plans** basing on previous plan's result (one **example search plan** is shown below) and the **final paremater set** is as the following: ```{'C': 1.0, 'decision_function_shape': 'ovo', 'degree': 5, 'kernel': 'poly'}```.
 
 ```javascript
 # Create the parameter grid based on the results of random search 
