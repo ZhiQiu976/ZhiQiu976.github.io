@@ -248,7 +248,7 @@ grid_search.best_params_
 
 # Model Comparison
 
-`Model Performance` are for training and testing data are shown below:
+`Model Performance` for training and testing data are shown below:
 
 - **Training** Data Set
 
