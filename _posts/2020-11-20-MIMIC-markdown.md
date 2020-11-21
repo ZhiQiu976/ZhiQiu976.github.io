@@ -10,7 +10,7 @@ comments: true
 
 This post is about doing **data analysis and predictive modeling** for the [MIMIC Dataset](https://mimic.physionet.org) and constructing a `dashboard (deployed on GCP)` for **results demonstration** and **interactive prediction**. 
 
-Detailed source code for this `Predictive Modeling` project can be found in this [GitHub repo](https://github.com/biostats823-final-project/MIMIC-Predictive-Modeling). The `deployed dashboard` can be accessed via this [link](https://bios823-mimic-dashboard.ue.r.appspot.com/) (may take some time to load in 😛) and source code can be found [here](https://github.com/biostats823-final-project/MIMIC-Dashboard). 
+Detailed source code for this `Predictive Modeling` project can be found in this [GitHub repo](https://github.com/biostats823-final-project/MIMIC-Predictive-Modeling). The `deployed dashboard` can be accessed via this [link](https://bios823-mimic-dashboard.ue.r.appspot.com/) (may take some time to load in 😛) or you may play with it in the `Dashboard` section below within this post 👻. Source codes about construction of this dashboard can be found [here](https://github.com/biostats823-final-project/MIMIC-Dashboard). 
 
 <br />
 
@@ -28,7 +28,7 @@ The [MIMIC Dataset](https://mimic.physionet.org) is an openly available dataset 
 
 The main `purpose` of this project is to predict `Patients' Discharge Location`. More specifically, we want to construct a classification system for **discharge location of patients with ICU admission** by using **machine learning techniques** and **information** about patients' demographics, vital signs, laboratory tests, medications, etc.
 
-As for `relative audience`, our project aims to provide help for `hospital administration team, inquisitive researchers and curious patients`. Our final **multi-page dashboard** serves as a useful platform for `monitoring occupancy and clinical results of patients` with comprehensive visual demonstration. Moreover, the **online ML prediction section of our dashboard** provides `real-time results of clinical outcome`, which could greatly assist in the `decision-making process` of patients and doctors.
+As for `relative audience`, our project aims to provide help for `hospital administration team, inquisitive researchers and curious patients`. Our final **multi-page dashboard** serves as a useful platform for `monitoring occupancy and clinical results of patients` with comprehensive visual demonstration. Moreover, the **online ML prediction section of our dashboard** provides `real-time results of clinical outcome`, which could greatly assist in the **decision-making process** of patients and doctors.
 
 The `datailed benefits` are summarized as below:
 
