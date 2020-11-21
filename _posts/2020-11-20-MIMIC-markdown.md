@@ -19,6 +19,8 @@ Detailed source code for this `Predictive Modeling` project can be found in this
 
 The [MIMIC Dataset](https://mimic.physionet.org) is an openly available dataset developed by the MIT Lab for **Computational Physiology**, comprising deidentified health data associated with `~60,000 intensive care unit admissions` (53,432 adult patients and 8,100 neonatal patients) from `June 2001 to October 2012`. It includes **demographics, vital signs, laboratory tests, medications, and more**.
  
+![image](/assets/img/mimic-dataset.png){: .mx-auto.d-block :}
+ 
 <br /> 
 
 
@@ -53,7 +55,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 Next, I continued with the `extracted and collected csv files`, did some `EDA` and made some `data cleaning and transformation` in preparation for the ML task later (detailes can be found in this [notebook](https://github.com/biostats823-final-project/MIMIC-Predictive-Modeling/blob/master/EDA/EDA_2.ipynb)):
 
-1. Target Variable Re-Classification and Encoding
+- Step 1. Target Variable Re-Classification and Encoding
 
 ![image](/assets/img/mimic1.png){: .mx-auto.d-block :}
 
@@ -74,7 +76,7 @@ df['target'] = result
 ```
 <br /> 
 
-2. Time/Date Related Variable Re-Formatting
+- Step 2. Time/Date Related Variable Re-Formatting
 
 ```javascript
 # time in emergency department, if not enter, then 0
@@ -87,7 +89,7 @@ df['EDstay'] = df.EDstay.dt.total_seconds()
 ```
 <br /> 
 
-3. Variable Selection basing on Logic
+- Step 3. Variable Selection basing on Logic
 
 ![image](/assets/img/mimic2.png){: .mx-auto.d-block :}
 
@@ -105,7 +107,7 @@ df_new = df.drop(['DISCHARGE_LOCATION', 'SUBJECT_ID', 'HADM_ID', 'icustay_id',
 ![image](/assets/img/mimic3.png){: .mx-auto.d-block :}
 
 
-4. Correlation Checking and Further Variable Analysis & Transformation
+- Step 4. Correlation Checking and Further Variable Analysis & Transformation
 
 ![image](/assets/img/mimic4.png){: .mx-auto.d-block :}
 
@@ -207,15 +209,15 @@ As for the model building part, each of our team members took charge of certain 
 
 Below is my attemption procedure:
 
-1. Firstly check whether this data is linearly seperable by using a Perceptron and check its performance
+- Step 1. Firstly check whether this data is linearly seperable by using a Perceptron and check its performance
 
 ![image](/assets/img/mimic7.png){: .mx-auto.d-block :}
 
 As indicated by the results above, compared to the `dummy classifier` (59% accuracy), `perceptron` model could achieve about 64% accuracy, indicating that common models for linearly seperable data like `Logistic Regression and SVM with linear/poly kernel` are quite worth trying.
 
-2. Next I attempted to do some clustering checking by the `Elbow Method` (**WCSS plot with K-means**) and found that there indeed exist 4 clusters for our data. Then I attempted to add `results` of **a K-means model with 4 clusters** as a new feature, but simple checking with **LightGBM** (used this model for checking beacuse it is very fast to run) showed that adding such a feature would not improve accuracy.
+- Step 2. Next I attempted to do some clustering checking by the `Elbow Method` (**WCSS plot with K-means**) and found that there indeed exist 4 clusters for our data. Then I attempted to add `results` of **a K-means model with 4 clusters** as a new feature, but simple checking with **LightGBM** (used this model for checking beacuse it is very fast to run) showed that adding such a feature would not improve accuracy.
 
-3. Therfore, I kept using the features we engineered as in the `ETL, EDA and Data Cleaning` section and started `SVM` model tuning. I firstly attempted `Random Grid Search` but this method actually did not help a lot with tailoring good parameters. Thus, I kept using `3-fold Grid Search` (used 3-fold for speed and to avoid overfitting) for **parameter fine tuning**. I **attempted multiple grid search plans** basing on previous plan's result (one **example search plan** is shown below) and the **final paremater set** is as the following: ```{'C': 1.0, 'decision_function_shape': 'ovo', 'degree': 5, 'kernel': 'poly'}```.
+- Step 3. Therfore, I kept using the features we engineered as in the `ETL, EDA and Data Cleaning` section and started `SVM` model tuning. I firstly attempted `Random Grid Search` but this method actually did not help a lot with tailoring good parameters. Thus, I kept using `3-fold Grid Search` (used 3-fold for speed and to avoid overfitting) for **parameter fine tuning**. I **attempted multiple grid search plans** basing on previous plan's result (one **example search plan** is shown below) and the **final paremater set** is as the following: ```{'C': 1.0, 'decision_function_shape': 'ovo', 'degree': 5, 'kernel': 'poly'}```.
 
 ```javascript
 # Create the parameter grid based on the results of random search 
@@ -238,7 +240,7 @@ grid_search.best_params_
 ```
 <br /> 
 
-4. As for `Logistic Regression`, I attempted `Optuna` for parameter tuning (**optimization history plot** is shown below) and the **final parameter set** is ```{penalty='l1', solver='liblinear', multi_class='ovr', random_state=0, C=0.9706}```.
+- Step 4. As for `Logistic Regression`, I attempted `Optuna` for parameter tuning (**optimization history plot** is shown below) and the **final parameter set** is ```{penalty='l1', solver='liblinear', multi_class='ovr', random_state=0, C=0.9706}```.
 
 ![image](/assets/img/mimic8.png){: .mx-auto.d-block :}
 
@@ -273,7 +275,10 @@ As you can see from the upper-right `EXPLORE` badge, our dashboard have five mai
 
 ![image](/assets/img/mimic11.png){: .mx-auto.d-block :}
 
-You can access **homepage** via the `Home` link as shown above or by clicking the dashboard title `MIMIC PREDICTIVE MODELING`. The `EDA` sectioin includes a lot of visualization for the original **MIMIC data set**. The `Models` part is about results of the models we attempted. The `Calendar` section shows a calendar layout of prediction results which could be of significant importance to care managers. At last, the `Online ML` section is our **responsive real-time pediction app**. Users can enter different combination of inputs and get immediate prediction. Note that only 10 features are listed in this app (first five are the top-5-importance ones in our best XgBoost model, last five are the ones we view as importance from our domain knowledge), the other features for computation are using the **mean and mode** of the testing records.
+- You can access **homepage** via the `Home` link as shown above or by clicking the dashboard title `MIMIC PREDICTIVE MODELING`. - The `EDA` sectioin includes a lot of visualization for the original **MIMIC data set**. 
+- The `Models` part is about results of the models we attempted. 
+- The `Calendar` section shows a calendar layout of prediction results which could be of significant importance to care managers.
+- At last, the `Online ML` section is our **responsive real-time pediction app**. Users can enter different combination of inputs and get immediate prediction. Note that only 10 features are listed in this app (first five are the top-5-importance ones in our best XgBoost model, last five are the ones we view as importance from our domain knowledge), the other features for computation are using the **mean and mode** of the testing records.
 
 As for the structure of the **multi-page layout**, we followed [this tutorial](https://towardsdatascience.com/beginners-guide-to-building-a-multi-page-dashboard-using-dash-5d06dbfc7599). `index.py` controls the main page layout and `app.py` is about server connection. **Construction files for each section** can be accessed in the ['apps' folder](https://github.com/biostats823-final-project/MIMIC-Dashboard/tree/main/apps) of our dashboard repository. I'm mainly in charge of the `Models` section, whose source code coube be find in the ['Models.py'](https://github.com/biostats823-final-project/MIMIC-Dashboard/blob/main/apps/Models.py) file.
 
@@ -371,7 +376,7 @@ def update_graph2(classifier2, num_of_feature):
 
 # Deployment
 
-Lastly, we deployed our dashboard to [GCP - Google Cloud Platform](https://cloud.google.com). The whole procedure is similar to what I did for `the Streamlit App deployment on Heroku` in [one previous post](https://zhiqiu976.github.io/2020-11-05-dashboard-markdown/): opening an account on GCP, creating a corresponding Github repository for dashboard construction, adding some configuration files and a final building.
+Lastly, we deployed our dashboard to [GCP - Google Cloud Platform](https://cloud.google.com). The whole procedure is similar to what I did for `the Streamlit App deployment on Heroku` in [one previous post](https://zhiqiu976.github.io/2020-11-05-dashboard-markdown/): 1. opening an account on GCP, 2. creating a corresponding Github repository for dashboard construction, 3. adding some configuration files, 4. a final building.
 
 A detailed tutorial about how to package your model with the EDA part can be find [here](https://medium.com/xebia-france/how-to-deploy-your-own-ml-model-to-gcp-in-5-simple-steps-bf2b5898c1ab) and [this](https://datasciencecampus.github.io/deploy-dash-with-gcp/) is the post we followed for adding configuration and conducting final deployment. More details about how exactly we deployed this whole dashboard can be found in Zhenhui's post [here](https://zhenhuixu.github.io/2020/11/predicting-discharge-locations-based-on-machine-learning-methods-and-ehr-data.html).
 
@@ -379,7 +384,7 @@ A detailed tutorial about how to package your model with the EDA part can be fin
 
 # Final Words
 
-To sum up, this project is our final project for `Duke BIOSTATS823 Fall 2020` course. It is really a very comprehensive project mimicing nearly all parts of a whole `Data Analysis and Product Deployment` procedure. We worked in a group of four in a two-months' duration with continuous collabration and bi-weekly meeting. We have used a lot of data science techniques in this experience: SQL, pandas, missingno, optuna, xgboost, scikit-learn, matplotlib, pyplot, seaborn, dash, docker, gcp, etc. A very enjoyable data science diving experience and thanks for reading! 🥂
+To sum up, this project is our final project for `Duke BIOSTATS823 Fall 2020` course. It is really a very comprehensive project mimicing nearly all parts of a whole `Data Analysis and Product Deployment` procedure. We worked in a group of four in a two-months' duration with continuous collabration and bi-weekly meeting. We have used a lot of **data science techniques** in this experience: SQL, pandas, missingno, optuna, xgboost, scikit-learn, matplotlib, pyplot, seaborn, dash, docker, gcp, etc. A very enjoyable data science diving experience and thanks for reading! 🥂
 
 ![image](/assets/img/mimic-final.png){: .mx-auto.d-block :}
 
