@@ -42,7 +42,7 @@ The `datailed benefits` are summarized as below:
 
 
 
-# ETL, EDA and Data Cleaning
+# ETL, EDA, Data Cleaning & Feature Engineering
 
 We downloaded data from the [MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/) (note that some to access this database, you must do some required training to become be a credentialed user for this website), combined **ICU stay information** about **demographics data and vital signs** with **laboratory test results** via `GCP BigQuery`. Most of the ETL process was done by my teammate Zhenhui and details are included in the `Querying and Merging Raw Dataset` section of her post [here](https://zhenhuixu.github.io/2020/11/predicting-discharge-locations-based-on-machine-learning-methods-and-ehr-data.html). In summary, we used **46,520 patients' records from the original MIMIC database**. These patients were admitted to intensive care units from **June 2001-October 2012**. Note that only the first record of ICU stay was kept if a patient had multiple ICU stay records. As for preparation of `Training and Testing Dataset`, we used **20%** of the original **46,520 records** as our `testing data` with a random **seed of 123** and with **maintenance of the original target variable distribution**.
 
