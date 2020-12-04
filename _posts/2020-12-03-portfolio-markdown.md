@@ -43,6 +43,24 @@ Here is a summary about my **Data Science portfolio**. Check this post for my `w
 
 ## Course Projects
 
+### [Kaggle Competition - Airbnb Listing Data Analysis](https://www.kaggle.com/c/duke-cs671-fall20-airbnb-pricing-data)
+
+- Independently conducted data analysis and predictive modelling for prices of Airbnb listing places in Buenos Aires with Python.
+- Attempted various feature engineering (Binning, Ordinal Encoding, One-Hot Encoding, Clustering) and machine learning algorithms basing on detailed data cleaning and EDA.
+- Logically fine-tuned a Random Forest model and a lightGBM model for final prediction and positioned at top 6% (9/142) at final leaderboard of categorisation accuracy.
+
+### [Clinical Data Predictive Modeling](https://zhiqiu976.github.io/2020-11-20-MIMIC-markdown/)
+
+- Worked in a team of 4 to conduct data analysis on a clinical dataset (MIMIC) about predicting patients' discharge location after ICU admission in Python.
+- Conducted ETL, EDA, data cleaning, missing data imputation, feature engineering, variable selection and various machine learning model building on about 60,000 raw records.
+- Constructed a visual-rich and multi-page [dashboard](https://bios823-mimic-dashboard.ue.r.appspot.com) on GCP for data exploration, model evaluation and results demonstration with the functionality of interactive prediction by implementing a real-time XGBoost algorithm.
+
+### [Audio Separation](https://github.com/ZhiQiu976/Audio_Separation)
+
+- Worked in pair to explore both linear (ICA) and non-linear (CNN, Open-unmix) techniques for audio separation.
+- Prepared benchmark dataset MUSDB18 with self-conducted pre-processing (chunking, sampling, augmentation, random track mixing and fixed validation split).
+- Conducted metric selection (SDR, SIR, SAR, ISR, precision and recall) and evaluated different model results with SDR.
+- Finished 6-pages paper-style report writing with detailed literature review and made a 15 minutes presentation to class.
 
 ### [Bayesian Algorithm Implementation](https://github.com/ZhiQiu976/project-IBP-LGaussian-Algorithm-Implementation)
 
