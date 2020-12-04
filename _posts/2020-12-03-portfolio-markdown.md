@@ -9,8 +9,10 @@ thumbnail-img: /assets/img/hands.jpg
 Here is a summary about my **Data Science portfolio**. Check this post for my `work and project experiences`!
 
 <br /> 
+
 ## Internship
 
+<br /> 
 
 ### `Data Science Intern - Wells Fargo, USA`
 
@@ -45,6 +47,7 @@ Here is a summary about my **Data Science portfolio**. Check this post for my `w
 
 ## Course Projects
 
+<br /> 
 
 ### [Kaggle Competition - Airbnb Listing Data Analysis](https://www.kaggle.com/c/duke-cs671-fall20-airbnb-pricing-data)
 
