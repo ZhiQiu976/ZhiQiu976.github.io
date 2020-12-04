@@ -39,7 +39,7 @@ Here is a summary about my **Data Science portfolio**. Check this post for my `w
 - Participated in risk analysis, drafted loan investigations and due diligence reports writing.
 - Assisted in loan management and helped evaluating credit level of borrowers by using bank's internal credit system (mainly about financial liquidity).
 
-
+<br /> 
 
 ## Course Projects
 
